@@ -1,0 +1,23 @@
+site_name: Knowledge is Power
+nav:
+    - index.md
+    - 'Linux Distribution Tutorial':
+        - yocto/index.md
+        - yocto/about-yocto.md
+        - yocto/prerequisites.md
+        - yocto/setup.md
+        - yocto/initial-config.md
+        - yocto/building-images.md
+        - yocto/flashing-images.md
+        - yocto/running-yocto.md
+        - yocto/next-steps.md
+theme:
+    name: material
+    palette:
+        scheme: default
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
