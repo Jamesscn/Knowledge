@@ -15,19 +15,21 @@ Before anything, you will have to install the following set of packages:
 - libncurses5-dev
 - python3-distutils
 - texinfo
+- lz4c
+- zstd
 
 If you are running one of the distributions below you can run the command that is shown. For other distributions these packages may vary or may already be installed, and will need to be installed through that distribution's package manager.
 
 === "Ubuntu"
 
     ```bash
-    sudo apt install build-essential chrpath diffstat gawk libncurses5-dev python3-distutils texinfo
+    sudo apt install build-essential chrpath diffstat gawk libncurses5-dev python3-distutils texinfozstd liblz4-tool
     ```
 
 === "Arch Linux"
 
     ```bash
-    pacman -S chrpath diffstat gawk ncurses texinfo rpcsvc-proto
+    sudo pacman -S chrpath diffstat gawk ncurses texinfo rpcsvc-proto
     ```
 
 In order to start work on the distribution, you must first set up the foundations which you will use to build and compile everything. The first step is to create a folder where you will house your files. I decided to call my folder Yocto, and I put it in my Documents folder:

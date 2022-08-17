@@ -15,9 +15,22 @@ theme:
     name: material
     palette:
         scheme: default
+        primary: deep orange
+    font:
+        text: Roboto Slab
+        code: Ubuntu Mono
+    language: en
+    features:
+        - navigation.sections
+        - toc.integrate
+extra_css:
+    - stylesheets/extra.css
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.keys
+    - pymdownx.tabbed:
+        alternate_style: true
+plugins:
+    - search
